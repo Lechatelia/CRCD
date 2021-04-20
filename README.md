@@ -9,13 +9,13 @@
 However, I reimplented the most critical parts in the works with torch, thus it should be very easy to be pluged into the CRD repo.
 I will open-source the complete version later.
 
-## Key Compolents
+## Key components
 
-* contrastive loss
+* Contrastive loss
 
-> the crd-style implementation is [here](./crcd/criterion.py)
+> the crd-style implementation is [here](./crcd)
 
-* gradient element
+* Computation of gradient element
     
 > gradient element is computed in the `def get_grad_loss()` in the [loops.py](./helper/loops.py) by using torch API `torch.autograd.grad()`.
     Then, the crcd loss by using gradient relation can be obtained easily.
