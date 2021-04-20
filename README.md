@@ -24,7 +24,7 @@ I will open-source the complete version later.
 > It is very effective to adjust the distillation loss weight dynamically during the training procedures. We supply some strategy examples in the funtion `def adjust_mimic_loss_weight()` in the [loops.py](./helper/loops.py#L11).
 In these strategy, the reregulatization term in the total loss from distillaltion loss is reduced according to a certain rule as the training progresses.
 
->  In our exps with 250 epochs training, we adopted the stepwise one: before 240 epoch, the loss weight maintains 1; after 240, the loss weight is adjusted to 0 for the last 10 epochs. This means the students are finetuned for another 10 epochs with the minimun learning rate
+>  In our cifar100 experiments with 250 epochs training, we adopted the stepwise one: before the 240-th epoch, the loss weight maintains 1; after the 240-th, the loss weight is adjusted to 0 for the last 10 epochs. This means the students are finetuned for another 10 epochs with the minimun learning rate
 
 
 
