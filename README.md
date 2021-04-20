@@ -1,4 +1,4 @@
-# CRCD
+# Complementary Relation Contrastive Distillation (CRCD)
 
 ## Introduction
 * This repo is the incomplete implementation  of the following paper:
@@ -15,12 +15,12 @@ I will open-source the complete version later.
 
 > the crd-style implementation is [here](./crcd)
 
-* Computation of gradient element
+* Computation of gradient element 
     
 > gradient element is computed in the `def get_grad_loss()` in the [loops.py](./helper/loops.py#L56) by using torch API `torch.autograd.grad()`.
     Then, the crcd loss by using gradient relation can be obtained easily.
 
-* the very effective trick
+* The very effective trick which is used in CRCD
 > It is very effective to adjust the distillation loss weight dynamically during the training procedures. We supply some strategy examples in the funtion `def adjust_mimic_loss_weight()` in the [loops.py](./helper/loops.py#L11).
 In these strategy, the reregulatization term in the total loss from distillaltion loss is reduced according to a certain rule as the training progresses.
 

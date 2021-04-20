@@ -53,7 +53,7 @@ def gard_cos_sim(grad_t, grad_s):
     return 1 - F.cosine_similarity(grad_t, grad_s, dim=1).mean()
 
 
-def get_grad_loss(feat_t, feat_s, loss_cls_teacher, loss_cls_student,  criterion_grad, index=None, contrast_idx=None):
+def get_gradnh_loss(feat_t, feat_s, loss_cls_teacher, loss_cls_student,  criterion_grad, index=None, contrast_idx=None):
     gm_loss = []
     teacher_grads = torch.autograd.grad([loss_cls_teacher],
                                        [feat_t],
