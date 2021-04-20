@@ -4,13 +4,6 @@ import torch
 import numpy as np
 
 
-def adjust_learning_rate_new(epoch, optimizer, LUT):
-    """
-    new learning rate schedule according to RotNet
-    """
-    lr = next((lr for (max_epoch, lr) in LUT if max_epoch > epoch), LUT[-1][1])
-    for param_group in optimizer.param_groups:
-        param_group['lr'] = lr
 
 
 def adjust_learning_rate(epoch, opt, optimizer, mode='new'):

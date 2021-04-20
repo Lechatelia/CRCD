@@ -20,7 +20,7 @@ class CRCDLoss(nn.Module):
         opt.n_data: the number of samples in the training set, therefor the memory buffer is: opt.n_data x opt.feat_dim
     """
     def __init__(self, opt):
-        super(SRDLoss, self).__init__()
+        super(CRCDLoss, self).__init__()
         self.emd_fc_type = opt.embed_type
         print("fc_type: {} ".format(self.emd_fc_type))
         if self.emd_fc_type == "nofc":

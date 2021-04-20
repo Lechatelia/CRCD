@@ -6,7 +6,7 @@
     "Complementary Relation Contrastive Distillation" (CRCD). [arxiv](https://arxiv.org/abs/2103.16367)
 
 * I am sorry that the source code in this repository is not an official  implementation, which is relies on some internal code of the company's self-developed deep learning library.
-However, I reimplented the most critical parts in the works with torch, thus it should be very easy to be pluged into the CRD repo.
+However, I reimplented the most critical parts in the work with torch, thus it should be very easy to be pluged into the CRD repo.
 I will open-source the complete version later.
 
 ## Key components

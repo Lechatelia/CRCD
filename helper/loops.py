@@ -108,7 +108,6 @@ def train_distill(epoch, train_loader, module_list, criterion_list, optimizer, o
             input = input.cuda()
             target = target.cuda()
             index = index.cuda()
-            # if opt.distill in ['crd', 'srd', 'srd_v2']:
             contrast_idx = contrast_idx.cuda()
 
         # ===================forward=====================
