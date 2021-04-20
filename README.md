@@ -17,11 +17,11 @@ I will open-source the complete version later.
 
 * Computation of gradient element
     
-> gradient element is computed in the `def get_grad_loss()` in the [loops.py](./helper/loops.py) by using torch API `torch.autograd.grad()`.
+> gradient element is computed in the `def get_grad_loss()` in the [loops.py](./helper/loops.py#L56) by using torch API `torch.autograd.grad()`.
     Then, the crcd loss by using gradient relation can be obtained easily.
 
 * the very effective trick
-> It is very effective to adjust the distillation loss weight dynamically during the training procedures. We supply some strategy examples in the funtion `def adjust_mimic_loss_weight()` in the [loops.py](./helper/loops.py).
+> It is very effective to adjust the distillation loss weight dynamically during the training procedures. We supply some strategy examples in the funtion `def adjust_mimic_loss_weight()` in the [loops.py](./helper/loops.py#L11).
 In these strategy, the reregulatization term in the total loss from distillaltion loss is reduced according to a certain rule as the training progresses.
 
 >  In our exps with 250 epochs training, we adopted the stepwise one: before 240 epoch, the loss weight maintains 1; after 240, the loss weight is adjusted to 0 for the last 10 epochs. This means the students are finetuned for another 10 epochs with the minimun learning rate
