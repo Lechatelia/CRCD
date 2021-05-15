@@ -70,6 +70,7 @@ def get_gradnh_loss(feat_t, feat_s, loss_cls_teacher, loss_cls_student,  criteri
             gm_loss.append(criterion_grad(student_grad, teacher_grad))
     return sum(gm_loss)
 
+
 def train_distill(epoch, train_loader, module_list, criterion_list, optimizer, opt):
     """One epoch distillation"""
     # set modules as train()

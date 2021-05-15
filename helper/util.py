@@ -4,8 +4,6 @@ import torch
 import numpy as np
 
 
-
-
 def adjust_learning_rate(epoch, opt, optimizer, mode='new'):
     """Sets the learning rate to the initial LR decayed by decay rate every steep step"""
     steps = np.sum(epoch > np.asarray(opt.lr_decay_epochs))
