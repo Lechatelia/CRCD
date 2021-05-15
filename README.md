@@ -8,7 +8,7 @@
 
 * I am sorry that the source code in this repository is not an official  implementation, which is relies on some internal code of the company's self-developed deep learning library.
 However, I reimplented the most critical parts in the work with torch, thus it should be very easy to be pluged into the CRD repo.
-* I provide a example to use CRCD loss in the [train_student.py](./train_student.py) in CRD repo. However, this training code is not checked and may be have some bugs.
+* I provide a example to use CRCD loss in CRD repo ([train_student.py](./train_student.py)). Note that this training code is not checked and may have some bugs.
 
 ## Key components
 
