@@ -13,7 +13,7 @@ However, I reimplented the most critical parts in the work with torch, thus it s
 ## Key components
 
 
-* Contrastive loss
+* Relation contrastive loss
 
 > the crd-style implementation is [here](./crcd)
 
