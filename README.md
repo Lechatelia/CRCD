@@ -20,7 +20,7 @@ However, I reimplented the most critical parts in the work with torch, thus it s
 * Computation of gradient element 
     
 > gradient element is computed in the `def get_grad_loss()` in the [loops.py](./helper/loops.py#L56) by using torch API `torch.autograd.grad()`.
-    Then, the crcd loss by using gradient relation can be obtained easily.
+    Then, the gradient relation can be estimated and the crcd loss utilizeing gradient elements can be obtained easily.
 
 * The very effective trick which is used in CRCD
 > It is very effective to adjust the distillation loss weight dynamically during the training procedures. We supply some strategy examples in the funtion `def adjust_mimic_loss_weight()` in the [loops.py](./helper/loops.py#L11).
