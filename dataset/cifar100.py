@@ -9,7 +9,6 @@ from PIL import Image
 
 from PIL import ImageFilter
 import random
-from .autoaugment import ImageNetPolicy, CIFAR10Policy, SVHNPolicy
 
 
 class TwoCropsTransform:

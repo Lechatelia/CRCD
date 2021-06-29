@@ -1,7 +1,7 @@
 """
-the general training framework
+the  distillation framework for CRCD
 """
-
+# Modified from CRD: https://github.com/HobbitLong/RepDistiller
 from __future__ import print_function
 
 import os
